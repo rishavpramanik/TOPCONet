@@ -12,7 +12,7 @@ for i in range(len(l_test)):
 
     img = img.astype('float32')/255.0
 
-    data.append(img)
+    data.append(img[:,:,2])
 
     labels.append(label)
   except:
