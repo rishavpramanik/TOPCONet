@@ -1,3 +1,8 @@
+import cv2
+from skimage.filters import roberts
+import numpy as np
+
+
 test_text = []
 data = []
 normal = []
