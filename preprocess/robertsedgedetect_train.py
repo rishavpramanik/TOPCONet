@@ -1,5 +1,7 @@
 import cv2
 from skimage.filters import roberts
+import numpy as np
+
 data = []
 train3 = []
 normal = []
