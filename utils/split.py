@@ -36,3 +36,20 @@ covid_files.extend(covid_files1)
 random.shuffle(covid_files)
 random.shuffle(pneumonia_files)
 random.shuffle(normal_files)
+
+
+train_dic = {}
+for f in covid_files[:739]:
+  train_dic[f] = [1,0,0]
+for f in normal_files[:1072]:
+  train_dic[f] = [0,1,0]
+for f in pneumonia_files[:3100]:
+  train_dic[f] = [0,0,1]
+  
+test_dic = {}
+for f in covid_files[739:]:
+  test_dic[f] = [1,0,0]
+for f in normal_files[1072:]:
+  test_dic[f] = [0,1,0]
+for f in pneumonia_files[3100:]:
+  test_dic[f] = [0,0,1]
