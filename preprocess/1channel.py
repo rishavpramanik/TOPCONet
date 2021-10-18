@@ -1,3 +1,6 @@
+import cv2
+import numpy as np
+
 covid_dic_list = {}
 data = []
 labels = []
